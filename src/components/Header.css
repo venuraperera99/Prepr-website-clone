@@ -1,0 +1,60 @@
+/* Header.css */
+
+.header-container {
+    background-color: white;
+    border: 1px solid rgba(51, 51, 51, 0.2); /* Add an outline to the header */
+    color: #333; /* Text color for the header */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center the content */
+  }
+  
+  h1 {
+    margin: 0;
+    color: #333; /* Text color for the heading */
+  }
+  
+  nav {
+    display: flex;
+    align-items: center; /* Vertically center the list items */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  li {
+    margin-right: 10px;
+    cursor: pointer;
+    color: #777; /* Default text color for list items */
+    transition: color 0.3s; /* Add transition for smooth color change */
+  }
+  
+  li:hover {
+    color: green; /* Text color on hover */
+  }
+  
+/* Styles for icons */
+nav ul li svg {
+    width: 22px; /* Adjust the width as needed */
+    height: 22px; /* Adjust the height as needed */
+    vertical-align: middle; /* Align icons vertically with text */
+    margin-right: 5px; /* Add some space to the right of the icon */
+    font-size: 24px; /* Adjust the font-size to make the icons larger */
+}
+
+  nav ul.header-tabs {
+    position: absolute;
+    vertical-align: middle;
+    justify-content: space-between;
+    padding: 10px; /* Use a valid number with the appropriate unit (e.g., px) */
+    flex-direction: row;
+    left: 200px;
+  }
+
+  nav ul.header-tabs li {
+    margin-right: 25px; /* Adjust the margin-right value to add space between elements */
+  }
