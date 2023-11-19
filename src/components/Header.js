@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './Header.css'; // Import your external stylesheet
-import { FaBell, FaQuestionCircle, FaSearch, FaUserCircle, FaBars } from 'react-icons/fa'; // Import specific icons from the Font Awesome set
+import './Header.css'; 
+import { FaBell, FaQuestionCircle, FaUserCircle } from 'react-icons/fa';
 import { FaMessage } from "react-icons/fa6";
 import { BsGrid3X3GapFill } from "react-icons/bs";
 
