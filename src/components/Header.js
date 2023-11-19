@@ -3,10 +3,19 @@ import './Header.css';
 import { FaBell, FaQuestionCircle, FaUserCircle } from 'react-icons/fa';
 import { FaMessage } from "react-icons/fa6";
 import { BsGrid3X3GapFill } from "react-icons/bs";
+import { MenuGrid } from './MenuGrid';
 
 export const Header = () => {
-
     const [searchQuery, setSearchQuery] = useState('');
+    const [isMenuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+      setMenuOpen(!isMenuOpen);
+    };
+  
+    const closeMenu = () => {
+      setMenuOpen(false);
+    };
 
     const handleInputChange = (event) => {
       setSearchQuery(event.target.value);
@@ -42,7 +51,8 @@ export const Header = () => {
             </div>
           </li>
           <li><FaUserCircle /></li>
-          <li><BsGrid3X3GapFill /></li>
+          <li onClick={toggleMenu}><BsGrid3X3GapFill /></li>
+          {isMenuOpen && <MenuGrid onClose={closeMenu} />}
         </ul> 
       </nav>
     </div>
